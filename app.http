@@ -1,0 +1,49 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "adam_richer",
+  "password": "richrttru",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+     "username":"adam_richer",
+  "password":"richrttru"
+}
+###
+GET http://localhost:3000/user/tweets/feed/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjExLCJpYXQiOjE2NzUzMjkwNjF9.aC54PJbHMftqnZBhXKfaidEskJ77qpsne5L0uNhbo2Q
+###
+GET http://localhost:3000/user/following/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjExLCJpYXQiOjE2NzUzMjkwNjF9.aC54PJbHMftqnZBhXKfaidEskJ77qpsne5L0uNhbo2Q
+###
+GET http://localhost:3000/user/followers/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjExLCJpYXQiOjE2NzUzMjkwNjF9.aC54PJbHMftqnZBhXKfaidEskJ77qpsne5L0uNhbo2Q
+###
+GET http://localhost:3000/tweets/4/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjExLCJpYXQiOjE2NzUzMjkwNjF9.aC54PJbHMftqnZBhXKfaidEskJ77qpsne5L0uNhbo2Q
+###
+GET http://localhost:3000/tweets/4/likes/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjExLCJpYXQiOjE2NzUzMjkwNjF9.aC54PJbHMftqnZBhXKfaidEskJ77qpsne5L0uNhbo2Q
+###
+GET http://localhost:3000/tweets/4/replies/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjExLCJpYXQiOjE2NzUzMjkwNjF9.aC54PJbHMftqnZBhXKfaidEskJ77qpsne5L0uNhbo2Q
+###
+GET http://localhost:3000/user/tweets/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjExLCJpYXQiOjE2NzUzMjkwNjF9.aC54PJbHMftqnZBhXKfaidEskJ77qpsne5L0uNhbo2Q
+###
+POST http://localhost:3000/user/tweets/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjExLCJpYXQiOjE2NzUzMjkwNjF9.aC54PJbHMftqnZBhXKfaidEskJ77qpsne5L0uNhbo2Q
+Content-Type: application/json
+
+{
+   "tweet": "The Mornings..."
+}
+###
+DELETE  http://localhost:3000/tweets/4/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjExLCJpYXQiOjE2NzUzMjkwNjF9.aC54PJbHMftqnZBhXKfaidEskJ77qpsne5L0uNhbo2Q
